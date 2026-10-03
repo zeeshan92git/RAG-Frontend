@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { CheckCircle2, FileText, Library, Trash2, Upload, X } from 'lucide-react';
 import type { DocRecord } from '@/lib/types';
 
-const API = 'http://localhost:8001';
+const API = 'https://rag-backend.fastapicloud.dev';
 const SUPPORTED = new Set(['pdf', 'docx', 'md', 'csv', 'txt']);
 const getExt = (fileName: string) => fileName.split('.').pop()?.toLowerCase() ?? '';
 
